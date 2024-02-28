@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>NewFlix</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 id="home" class="logo">NewFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="formulario-login.html">LOGIN</a></li>
+                    <li class="menu-list-item"><a href="#filmes">FILMES</a></li>
+                    <li class="menu-list-item"><a href="#series">SÉRIES</a></li>
+                    <li class="menu-list-item"><a href="#documentarios">DOCUMENTÁRIOS</a></li>
+                    <li class="menu-list-item"><a href="#animes">ANIMES</a></li>
+                    <li class="menu-list-item"><a href="#infantil">INFANTIL</a></li>
+                    <li class="menu-list-item"><a href="#musical">MUSICAL</a></li>
+                </ul>
+            </div>
+            <div class="perfil-container">
+                <img class="foto-perfil" src="img/blank-profile-picture-973460_640.jpg" alt="">
+                <div class="texto-perfil-container">
+                    <span class="texto-perfil">Perfil</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <a href="#home"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        <a href="./contato-layout.html"><i class="left-menu-icon fa-solid fa-envelope"></i></a>
+        <a href="./comunidade.html"><i class="left-menu-icon fa-solid fa-user-group"></i></a>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('img/610683.jpg')">
+                <img class="featured-title" src="img/Jurassic_Park_logo.png" alt="">
+                <h5>4/5   
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </h5>
+                <p class="featured-desc">Os paleontólogos Alan Grant, Ellie Sattler e o matemático Ian Malcolm fazem
+                    parte de um seleto grupo escolhido para visitar uma ilha habitada por dinossauros criados a partir
+                    de DNA pré-histórico. O idealizador do projeto e bilionário John Hammond garante a todos que a
+                    instalação é completamente segura. Mas após uma queda de energia, os visitantes descobrem, aos
+                    poucos, que vários predadores ferozes estão soltos e à caça.</p>
+                <button class="featured-button">ASSISTA AGORA</button>
+            </div>
+            <br />
+            <br />
+            <div class="movie-list-container">
+                <h1 id="filmes" class="movie-list-title">FILMES</h1>
+                <br/>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/poster_animais_fantasticos.jpg" alt="">
+                            <span class="movie-list-item-title">Animais Fantásticos: Os Segredos de
+                                Dumbledores</span>
+                                <h6>4.5/5   
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/poster_homem_aranha.jpg" alt="">
+                            <span class="movie-list-item-title">Homem-Aranha: Sem Volta Para Casa</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/sonic-2-poster.jpg" alt="">
+                            <span class="movie-list-item-title">Sonic 2</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/novo-poster-doutor-estranho.jpg" alt="">
+                            <span class="movie-list-item-title">Doutor Estranho: No Multiverso da Loucura</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/vingadores.jpg" alt="">
+                            <span class="movie-list-item-title">Vingadores: Ultimato</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/batman.jpg" alt="">
+                            <span class="movie-list-item-title">The Batman</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/morbius-poster-legadodamarvel.jpg" alt="">
+                            <span class="movie-list-item-title">Morbius</span>
+                            <h6>2.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/top-gun-maverick-ver5-xlg-2.jpg" alt="">
+                            <span class="movie-list-item-title">TOP GUN: Maverick</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/velozes9.jpg" alt="">
+                            <span class="movie-list-item-title">Velozes & Furiosos 9</span>
+                            <h6>3/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/poster300.jpg" alt="">
+                            <span class="movie-list-item-title">300</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/cidade-perdida.jpg" alt="">
+                            <span class="movie-list-item-title">Cidade Perdida</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 id="series" class="movie-list-title">SÉRIES</h1>
+                <br/>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/breaking-bad.jpg" alt="">
+                            <span class="movie-list-item-title">Breaking Bad</span>
+                                <h6>5/5   
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/gameofthrones.jpg" alt="">
+                            <span class="movie-list-item-title">Game of Thrones</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/peaky-blinders.jpg" alt="">
+                            <span class="movie-list-item-title">Peaky Blinders</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/poster-supernatural.jpg" alt="">
+                            <span class="movie-list-item-title">Supernatural</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/lucifer-s5b.jpg" alt="">
+                            <span class="movie-list-item-title">Lúcifer</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/friends.jpg" alt="">
+                            <span class="movie-list-item-title">Friends</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/greysanatomy.jpg" alt="">
+                            <span class="movie-list-item-title">Grey's Anatomy</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/How_to_Get_Away_with_Murder_Temporada_2_Poster.jpg" alt="">
+                            <span class="movie-list-item-title">How To Get Away with Murder</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/the-walking-dead-1-temporada-posteres-alternativos-001-scaled.jpg" alt="">
+                            <span class="movie-list-item-title">The Walking Dead</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/riverdale-poster.jpg" alt="">
+                            <span class="movie-list-item-title">Riverdale</span>
+                            <h6>2.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/poster-teenwolf.jpg" alt="">
+                            <span class="movie-list-item-title">Teen Wolf</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/Dark-Netflix-Computer-Wallpaper.jpg')">
+                <img class="featured-title" src="img/1200px-Dark_logo.png" alt="">
+                <br />
+                <h5>5/5   
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </h5>
+                <p class="text-info featured-desc">Quatro diferentes famílias - Kahnwald, Nielsen, Doppler e Tiedemann -
+                    vivem em Winden, uma pequena e aparentemente tranquila cidade alemã. A rotina dos moradores vira de
+                    cabeça para baixo quando duas crianças desaparecem misteriosamente, nas proximidades de uma antiga
+                    usina nuclear. Segredos familiares começam a emergir à medida que a polícia investiga os sumiços e
+                    logo percebe uma relação com eventos também sombrios do passado. O tempo e o espaço parecem se
+                    embaralhar cada vez mais, deflagrando uma série de tragédias que, curiosamente, se repete a cada
+                    geração.</p>
+                <button class="featured-button">ASSISTA AGORA</button>
+            </div>
+            <br />
+            <br />
+            <div class="movie-list-container">
+                <h1 id="documentarios" class="movie-list-title">DOCUMENTÁRIOS</h1>
+                <br/>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/dilma.jpg" alt="">
+                            <span class="movie-list-item-title">O Processo</span>
+                                <h6>4/5   
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/cuba.jpg" alt="">
+                            <span class="movie-list-item-title">Cuba e o Cameraman</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/drive-to-survive.jpg" alt="">
+                            <span class="movie-list-item-title">Dirigir para viver</span>
+                            <h6>2/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/mundo-misterio.jpg" alt="">
+                            <span class="movie-list-item-title">Mundo Mistério</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/cr7.jpg" alt="">
+                            <span class="movie-list-item-title">Ronaldo</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img//documentario-neymar-14-12-2_2e20dbeb.jpg" alt="">
+                            <span class="movie-list-item-title">Neymar: O Caos Perfeito</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/quincy-documentario-netflix.jpg" alt="">
+                            <span class="movie-list-item-title">Quincy Jones</span>
+                            <h6>3/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/chorao_marginal_alado_2-18637933.jpg" alt="">
+                            <span class="movie-list-item-title">Chorão: Marginal Alado</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/John-Wayne_1.jpg" alt="">
+                            <span class="movie-list-item-title">Conversations with a Killer: The John Wayne Gacy Tapes</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/O Diabo na Encruzilhada netflix poster.jpg" alt="">
+                            <span class="movie-list-item-title">O Diabo na Encruzilhada</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/o-dilema-das-redes.jpg" alt="">
+                            <span class="movie-list-item-title">O Dilema das Redes Sociais</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 id="animes" class="movie-list-title">ANIMES</h1>
+                <br/>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/poster_naruto.jpg" alt="">
+                            <span class="movie-list-item-title">Naruto</span>
+                                <h6>5/5   
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/dragonball_poster.jpg" alt="">
+                            <span class="movie-list-item-title">Dragon Ball Z</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/onepiece-poster.jpg" alt="">
+                            <span class="movie-list-item-title">One Piece</span>
+                            <h6>3/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/nanatsunotaizai-poster.jpg" alt="">
+                            <span class="movie-list-item-title">Os Sete Pecados Capitais</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img//big-poster-anime-attack-on-titan-lo004-tamanho-90x60-cm-attack-on-titan.jpg" alt="">
+                            <span class="movie-list-item-title">Attack on Titan</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/classroom.jpg" alt="">
+                            <span class="movie-list-item-title">Classroom Of The Elite</span>
+                            <h6>2/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/death-note.jpg" alt="">
+                            <span class="movie-list-item-title">Death Note</span>
+                            <h6>3/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/poster-one-punch-man.jpg" alt="">
+                            <span class="movie-list-item-title">One Punch Man</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/boruto-poster.jpg" alt="">
+                            <span class="movie-list-item-title">Boruto: Naruto Next Generations</span>
+                            <h6>3.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/darling-in-the-franxx.jpg" alt="">
+                            <span class="movie-list-item-title">Darling in the FranXX</span>
+                            <h6>1/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img//cavaleiros-zodiaco.jpg" alt="">
+                            <span class="movie-list-item-title">Os Cavaleiros do Zodíaco</span>
+                            <h6>2.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/unknown.png')">
+                <img class="featured-title" src="img/Haikyuu-logo.png" alt="">
+                <br />
+                <h5>4/5   
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </h5>
+                <p class="text-info featured-desc">Shouyou Hinata, ao ver uma partida de voleibol, fica fascinado com “o Pequeno Gigante”, um habilidoso jogador de vôlei, então decide juntar-se ao clube de vôlei de sua escola, no entanto ele é o único membro do clube. Após 3 anos ele finalmente completa o time e ruma para a disputa do Torneio de Primavera. No entanto, seu primeiro oponente de cara é o preferido das finais. É neste momento que ocorre o encontro de Hinata com Tobio Kageyama, o “Rei das quadras”. Embora tenham perdido a partida, Shouyou ainda está determinado a tomar o título de Kageyama, e ser aquele que permanece na quadra. Ao entrar na escola secundária, ele surpreende-se ao ver que ele e Kageyama, antes adversários, estão agora na mesma escola e clube!</p>
+                <button class="featured-button">ASSISTA AGORA</button>
+            </div>
+            <br />
+            <br />
+            <div class="movie-list-container">
+                <h1 id="infantil" class="movie-list-title">INFANTIL</h1>
+                <br/>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img//pf.jpg" alt="">
+                            <span class="movie-list-item-title">Phineas Ferb</span>
+                                <h6>5/5   
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/scooby-doo-classic-i8131.jpg" alt="">
+                            <span class="movie-list-item-title">Scooby-Doo</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/CoragemOC_oCovarde.jpg" alt="">
+                            <span class="movie-list-item-title">Coragem, o Cão Covarde</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/ben10.jpg" alt="">
+                            <span class="movie-list-item-title">Ben 10</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/as-meninas-super-poderosas.jpg" alt="">
+                            <span class="movie-list-item-title">As Meninas Super Poderosas</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/billy-mandy.jpg" alt="">
+                            <span class="movie-list-item-title">As Terríveis Aventuras de Billy & Mandy</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img//mgpam.png" alt="">
+                            <span class="movie-list-item-title">Meu Amigo da Escola é um Macaco</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/foster.jpg" alt="">
+                            <span class="movie-list-item-title">Mansão Foster para Amigos Imaginários</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/knd.jpg" alt="">
+                            <span class="movie-list-item-title">KND: A Turma do Bairro</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/du-dudu-edu.png" alt="">
+                            <span class="movie-list-item-title">Du, Dudu e Edu</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/gravity-falls.jpg" alt="">
+                            <span class="movie-list-item-title">Gravity Falls</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 id="musical" class="movie-list-title">MUSICAL</h1>
+                <br/>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/NasceUmaEstrela_quadrado.jpg" alt="">
+                            <span class="movie-list-item-title">Nasce uma Estrela</span>
+                                <h6>4.5/5   
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half checked"></span>
+                                </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/bohemian-rhapsody.jpg" alt="">
+                            <span class="movie-list-item-title">Bohemian Rhapsody</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/o-rei-do-show.jpg" alt="">
+                            <span class="movie-list-item-title">O Rei do Show</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/lalaland.jpg" alt="">
+                            <span class="movie-list-item-title">La La Land</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/magico-oz.jpg" alt="">
+                            <span class="movie-list-item-title">O Mágico de Oz (1939)</span>
+                            <h6>3/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/Mamma_Mia!_Here_We_Go_Again.jpg" alt="">
+                            <span class="movie-list-item-title">Mamma Mia! Lá Vamos Nós de Novo</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/moana.jpg" alt="">
+                            <span class="movie-list-item-title">Moana</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/bela-fera.jpg" alt="">
+                            <span class="movie-list-item-title">A Bela e a Fera (2017)</span>
+                            <h6>5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/frozen2.jpg" alt="">
+                            <span class="movie-list-item-title">Frozen 2</span>
+                            <h6>4/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/Miseraveis_Poster_Nacional.jpg" alt="">
+                            <span class="movie-list-item-title">Os Miseráveis</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img id="format" class="movie-list-item-img" src="img/fantasma-opera.jpg" alt="">
+                            <span class="movie-list-item-title">O Fantasma da Ópera</span>
+                            <h6>4.5/5   
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half checked"></span>
+                            </h6>
+                            <button class="movie-list-item-button">ASSISTIR</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                    <div class="text-final">
+                        <p>Pratica Profissional - UniBrasil 2022 ©</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="funcoes.js"></script>
+    <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script>
+    <div class="wraper"></div>
+</body>
+</html>

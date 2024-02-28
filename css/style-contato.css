@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #fcba03, #ff4d00);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    margin-left: 5.7rem;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #fcba03, #ff4d00);
+}
+.container {
+    background-color: white;
+    width: 350px;
+    height: 72vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #fcba03, #ff4d00);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus~.underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 285px;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+textarea{
+    height: 80px;
+    width: 300px;
+    outline: none;
+    box-shadow: 0 0 4px black;
+    margin-top: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #fcba03, #ff4d00);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus~.underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.botao {
+    margin-left: 85px;
+    margin-top: 8.5px;
+    padding: 0.8rem;
+    background: linear-gradient(to left, #fcba03, #ff4d00);
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 4px;
+    width: 125px;
+}
+.botao:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+.go-back{
+    margin-top: 45%;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-radius: 4px;
+    width: 310px;
+    padding: 0.8rem;
+    height: 3rem;
+    font-weight: bold;
+    margin-left: -329px;
+    text-decoration: none;
+    text-align: center;
+}
+.go-back:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+.link-voltar{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+}

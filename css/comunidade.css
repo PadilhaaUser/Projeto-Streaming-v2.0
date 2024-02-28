@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-primary: #fffefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 130vh;
+  max-height: 800vh;
+  background: linear-gradient(45deg, #fcba03, #ff4d00);
+}
+
+#movie-form {
+  max-width: 800px;
+  min-height: 400px;
+  margin: 0 auto;
+}
+
+.container i {
+  font-size: 1em;
+  color: var(--color-primary);
+}
+
+.title {
+  color: #000000;
+  font-size: 4em;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.title span {
+  color: var(--color-primary);
+}
+
+form {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 5em;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+input {
+  width: 80%;
+  border: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.form-control option {
+  text-transform: uppercase;
+}
+
+.btn-lg {
+
+  background-color: #430000;
+}
+
+table {
+  width: 80%;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  input {
+    width: 65%;
+  }
+}
+.go-back{
+  display: inline;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border-radius: 4px;
+  width: 120px;
+  padding: 0.8rem;
+  height: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+.go-back:hover {
+  transform: scale(1.1,1.1);
+  transition-duration: 0.5s;
+}
+.link-voltar, .link-voltar:hover{
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+}

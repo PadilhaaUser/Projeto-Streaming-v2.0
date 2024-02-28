@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    font-family: 'Sen', sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-size: 40px;
+    color: #fcba03;
+}
+
+#format {
+    height: 240px;
+}
+
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item {
+    margin-left: 30px;
+}
+
+.menu-list-item.active {
+    font-weight: bold;
+}
+
+.perfil-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.texto-perfil-container {
+    margin: 0 20px;
+}
+
+.foto-perfil {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon {
+    color: goldenrod;
+
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+.left-menu-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.left-menu-icon:hover {
+    color: #fcba03;
+}
+
+.left-menu-icon:hover.active {
+    color: #fcba03;
+}
+
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container {
+    margin-left: 50px;
+}
+
+.featured-content {
+    height: 50vh;
+    padding: 50px;
+}
+
+.featured-title {
+    width: 200px;
+}
+
+.featured-title:hover {
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+    transition-duration: 0.5s;
+}
+
+.featured-desc {
+    width: 500px;
+    color: lightgray;
+    margin: 20px 0;
+    text-indent: 4em;
+    text-align: justify;
+}
+
+.featured-button {
+    background-color: #fcba03;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.featured-button.active {
+    background-color: #fcba03;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.featured-button:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+.movie-list-container {
+    padding: 0 20px;
+}
+
+.movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.movie-list-item {
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.1);
+    margin: 0 30px;
+    opacity: 0.5;
+
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item:hover h6{
+    opacity: 0;
+}
+
+.movie-list-item-img {
+    width: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    height: 240px;
+}
+
+.movie-list-item-title {
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 30px;
+    right: 20px;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+h6{
+    margin-left: 25%;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+    
+}
+
+h6.active{
+    margin-left: 25%;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+    color:black;
+    
+}
+
+h5{
+    margin-left: 390px;
+    cursor: pointer;
+}
+
+.checked {
+    color: rgb(255, 0, 0);
+}
+
+
+.movie-list-item-button {
+    padding: 10px;
+    background-color: #fcba03;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    left: 90px;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 70px;
+    color: lightgray;
+    cursor: pointer;
+    opacity: 0.5;
+    right: 0;
+}
+
+.container.active {
+    background-color: rgb(221, 221, 221);
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.navbar-container.active {
+    background-color: white;
+    color: black
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.left-menu-icon.active {
+    color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.movie-list-item-title.active {
+    padding: 0 10px;
+    font-style: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    color: black;
+}
+
+.movie-list-item-desc.active {
+    padding: 10px;
+    font-style: 14px;
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    color: black;
+}
+
+.movie-list-item-button.active {
+    padding: 10px;
+    background-color: #fcba03;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    left: 90px;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    color: black;
+}
+
+.arrow.active {
+    font-size: 120px;
+    position: absolute;
+    top: 70px;
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+    opacity: 0.5;
+    right: 0;
+}
+
+@media only screen and (max-width: 940px) {
+    .menu-container {
+        display: none;
+    }
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #fcba03;
+    font-size: 110%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+a:link.active,
+a:visited.active {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover.active {
+    color: #fcba03;
+    font-size: 110%;
+}
+.text-final{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: rgb(160, 160, 160);
+    font-style: italic;
+}
